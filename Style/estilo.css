@@ -219,7 +219,7 @@ img {
 }
 
 
-/*pages*/
+/*pages Servicios*/
 
 .cardsServicios {
     display: flex;
@@ -242,26 +242,6 @@ img {
     height: 200px;
 }
 
-.cv{
-    background-size: cover;
-    height: 500px;
-}
-
-
-
-button {
-    background-color: #5005F2;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 16px;
-    margin: 1em 0em 1em 0em;
-}
-
-
-
-
-
-
 .Servicios {
     margin-top: 16px;
     padding: 16px;
@@ -273,6 +253,27 @@ button {
 
 
 }
+
+/*pages CV*/
+
+.cv{
+    background-size: cover;
+    height: 500px;
+}
+
+
+/*Botones*/
+
+button {
+    background-color: #5005F2;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 1em 0em 1em 0em;
+}
+
+
+/* Pages Contacto */
 
 .formContacto {
     width: 416px;
@@ -568,6 +569,12 @@ button {
     height: 20%;
     padding-right: 1em
     line-height: 1em;
+}
+
+/*pages contacto*/
+
+.formContacto {
+    left: 1em;
 }
 
 }
