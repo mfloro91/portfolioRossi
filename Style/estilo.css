@@ -6,7 +6,7 @@
 
 /* textos */
 
-h1 {
+.h1 {
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -16,7 +16,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
 }
 
-h3 {
+.h3 {
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -54,6 +54,7 @@ p {
 }
 
 /*navegacion*/
+
 
 .iconNav {
     width: 55px;
