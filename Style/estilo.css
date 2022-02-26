@@ -6,7 +6,7 @@
 
 /* textos */
 
-.h1 {
+.titulo1 {
     font-size: 3rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -16,7 +16,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
 }
 
-.h3 {
+.titulo3 {
     font-size: 1.5rem;
     font-family: 'Raleway', sans-serif;
 }
@@ -53,46 +53,10 @@ p {
     padding-left: 16px;
 }
 
-/*navegacion*/
-
-
-.iconNav {
-    width: 55px;
-    height: 55px;
-    position: absolute;
-    top: 10px;
-    left: 35px;
-}
-
-nav {
-    position: sticky;
-    top: 0px;
-}
-
-.navMobile {
-    display: none;
-}
-
-.navDesktop {
-    list-style-type: none;
-    background-color: #8350F2;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.desktopLi {
-    flex-direction: row;
-    padding: 25px;
-}
-
-.desktopLi:hover {
-    font-weight: bold;
-}
-
 a {
     text-decoration: none;
 }
- 
+
 /*index*/
 
 .titles {
@@ -188,7 +152,7 @@ img {
 .seccionCards {
     padding-top: 100px;
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 100%;
     grid-template-areas: "card1 card2 card3";
     column-gap: 5%;
@@ -205,7 +169,7 @@ img {
     padding-bottom: 20px;
 }
 
-.card {
+.cardCss {
    display: flex;
    flex-direction: column;
    text-align: left;
@@ -499,7 +463,7 @@ img {
 
 /*Botones*/
 
-button {
+.buttonMFR {
     background-color: #5005F2;
     padding: 10px;
     border-radius: 4px;
@@ -515,57 +479,20 @@ button:hover {
 /* Pages Contacto */
 
 .formContacto {
-    width: 416px;
-    height: 416px;
     background-color: #F2CA50;
+    width: 30%;
     border-radius: 4px;
     display: block;
     position: relative;
-    left: 32%;
-    text-align: center;
+    margin: 1em 1em 1em 15em;
+    padding: 2em;
 }
 
-#nombreForm {
-    display: block;
-    position: relative;
-    left: 32%;
-    bottom: 10px;
-    top: 10px;
+.tituloForm {
+    margin-left: 2em;
 }
 
-#mailForm {
-    display: block;
-    position: relative;
-    left: 32%;
-    bottom: 10px;
-    top: 20px;
-}
 
-#solicitar {
-    display: block;
-    position: relative;
-    left: 32%;
-    bottom: 10px;
-    top: 30px;
-    color: grey;
-    width: 165px;
-    height: 25px;
-}
-
-.valores {
-    color: grey
-}
-
-.enviar {
-    display: block;
-    position: relative;
-    left: 32%;
-    bottom: 10px;
-    top: 40px;
-    width: 165px;
-    height: 25px;
-    color: black;
-}
 
 
 

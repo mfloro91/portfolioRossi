@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../Style/estilo.css">
     <link rel="icon" href="../Images/Icono.png">
     <title>Proyecto Coder</title>
@@ -12,31 +13,28 @@
 <body>
 
     <header>
-        <nav>
-            <a href="../index.html">
-                <img src="../Images/Icono.png" alt="Icono MFR" class="iconNav">
-            </a>
-            <ul class="navDesktop">
-                <li class="desktopLi"> <a href="./servicios.html">Servicios</a> </li>
-                <li class="desktopLi"> <a href="./portfolio.html">Portfolio</a> </li>
-                <li class="desktopLi"> <a href="./curriculum.html">Curriculum</a> </li>
-                <li class="desktopLi"> <a href="./contacto.html">Contacto</a> </li>
-            </ul>
-            <ul class="navMobile">
-                <div class="iconHamburguesa"> <img src="../Images/hamburguesa.png" alt="icon hamburguesa"></div>
-                <div class="contenidoNav">
-                <li class="mobileLi"> <a href="./servicios.html">Servicios</a> </li>
-                <li class="mobileLi"> <a href="./portfolio.html">Portfolio</a> </li>
-                <li class="mobileLi"> <a href="./curriculum.html">Curriculum</a> </li>
-                <li class="mobileLi"> <a href="./contacto.html">Contacto</a> </li>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">MFR</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="servicios.html">Servicios</a>
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link  active" href="curriculum.html">Curriculum</a>
+                  <a class="nav-link" href="contacto.html">Contacto</a>
                 </div>
-            </ul>
-        </nav>
+              </div>
+            </div>
+        </nav>  
 
         <div class="headerPages">
             <section class="titulosBold">
-                <h1>Curriculum</h1>
-                <h3>¿Querés conocer mi experiencia?</h3>
+                <h1 class="titulo1">Curriculum</h1>
+                <h3 class="titulo3">¿Querés conocer mi experiencia?</h3>
             </section>
         </div>
 
@@ -73,8 +71,8 @@
 
 <footer class="FooterCv">
 <div class="datos">
-    <h1>María Florencia Rossi </h1>  
-    <h3>Psicóloga y Diseñadora UX</h3>
+    <h1 class="titulo1">María Florencia Rossi </h1>  
+    <h3 class="titulo3">Psicóloga y Diseñadora UX</h3>
     <div class="logos">
         <a href="https://www.linkedin.com/in/mar%C3%ADa-florencia-rossi/"> <img src="../Images/linkedin.png" alt="logo de linkedin" class="logo"> </a>
         <a href="https://www.behance.net/flor-rossi"> <img src="../Images/behance.png" alt="logo de behance" class="logo"> </a>
@@ -82,7 +80,7 @@
     </div>
 </div>
 <div class="secciones">
-    <h3>Visita en esta página</h3>
+    <h3 class="titulo3">Visita en esta página</h3>
     <p class="parrafoBlanco hoverFooter"> <a href="./servicios.html"> Servicios </a></p>
     <p class="parrafoBlanco hoverFooter"> <a href="./portfolio.html"> Portfolio </a></p>
     <p class="parrafoBlanco hoverFooter"> <a href="./curriculum.html"> Curriculum </a></p>
@@ -90,5 +88,6 @@
 </div>
 </footer>
 
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>
