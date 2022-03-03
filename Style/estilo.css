@@ -4,6 +4,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 /* textos */
 
 .titulo1 {
@@ -27,6 +28,14 @@ h2 {
 }
 
 .titulosVioleta {
+    color: #5005F2;
+    word-spacing: 0px;
+    line-height: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.subtitulosVioleta {
+    font-size: 1.75rem;
     color: #5005F2;
     word-spacing: 0px;
     line-height: 50px;
@@ -57,7 +66,7 @@ a {
     text-decoration: none;
 }
 
-/*index*/
+/*index header*/
 
 .titles {
     text-align: center;
@@ -71,6 +80,8 @@ a {
     height: 550px;
 }
 
+
+/*index proceso creacion*/
 
 #tituloIndex {
     text-align: center;
@@ -94,7 +105,7 @@ a {
 }
 
 .parrafoCorto {
-    width: 50%;
+    width: 70%;
 }
 
 img {
@@ -126,6 +137,8 @@ img {
     grid-area: imagen3;
 }
 
+/*index call to action*/
+
 .ctaIndex {
     text-align: center;
     display: flex;
@@ -139,6 +152,8 @@ img {
     background-repeat: no-repeat;
     height: 500px;
 }
+
+/*index portfolio*/
 
 .portfolio {
     text-align: center;
@@ -159,37 +174,13 @@ img {
     justify-content: center;
 }
 
-.textosCard {
-    padding-left: 1em;
-}
 
-.imgCard {
-    width: 100%;
-    height: 100%;
-    padding-bottom: 20px;
-}
 
-.cardCss {
-   display: flex;
-   flex-direction: column;
-   text-align: left;
-   line-height: 20px;
-   padding-bottom: 86px;
-   background-color: white;
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-}
 
 .card:hover {
     transform: scale(1, 1.05);
 }
 
-.next {
-    width: 98px;
-    height: 98px;
-    position: absolute;
-    left: 84%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-}
 
 
 /*pages*/ 
@@ -326,26 +317,10 @@ img {
     height: 500px;
     width: 100%;
     padding-top: 10%;
-    position: absolute;
-    top: 3350px;
+    position: relative;
+    top: 0px;
 }
 
-.ctaServicios {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 3em 0em 0em 0em;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../Images/cta.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    position: absolute;
-    top: 2958px;
-}
 
 /*pages CV*/
 
@@ -428,38 +403,6 @@ img {
 }
 
 
-.ctaCV {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 3em 0em 0em 0em;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../Images/cta.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    position: absolute;
-    top: 1400px;
-}
-
-.FooterCv {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url(../Images/Footer.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    padding-top: 10%;
-    position: absolute;
-    top: 1750px;
-}
-
 
 /*Botones*/
 
@@ -478,9 +421,10 @@ button:hover {
 
 /* Pages Contacto */
 
+
 .formContacto {
     background-color: #F2CA50;
-    width: 30%;
+    width: 50%;
     border-radius: 4px;
     display: block;
     position: relative;
@@ -491,9 +435,6 @@ button:hover {
 .tituloForm {
     margin-left: 2em;
 }
-
-
-
 
 
 /*Pie de página*/
@@ -547,19 +488,21 @@ button:hover {
 }
 
 
-/*SM*/
-@media only screen and (max-width: 600px){
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+
  
 
     /*Textos*/
 
-    h1 {
+  
+    .titulo1 {
         font-size: 2em;
     }
     h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
-    h3 {
+    .titulo3 {
         font-size: 1em;
     }
 
@@ -569,8 +512,14 @@ button:hover {
     }
     
     .titulosVioleta {
-        line-height: 2em;
+        font-size: 1.3em;
     }
+
+    .subtitulosVioleta {
+        font-size: 1em;
+    }
+
+   
     
     .tituloNegro {
         line-height: 1em;
@@ -587,58 +536,14 @@ button:hover {
         font-size: 0.8em;
     }
 
-    /*Navegación*/
-
-    .iconNav {
-        width: 55px;
-        height: 55px;
-        position: absolute;
-        left: 40%;
-    }
-
-    .navDesktop {
-    display: none;
-    }
-
-    .iconHamburguesa {
-        height: 20px;
-        width: 25px;
-        position: absolute;
-        right: 1em;
-        padding: 1em;
-    }
-    
-
-    .navMobile {
-        display: block;
-        background-color: #8350F2;
-        list-style-type: none;
-        height: 47px;
-    }
-
-    .contenidoNav {
-        display: block;
-        background-color: #8350F2;
-        list-style-type: none;
-        position: relative;
-        top: -2000px;
-        height: 300px;
-        padding: 1em;
-        line-height: 4em;
-        padding-bottom: 40px;
-    }
-
-    .navMobile:hover > .contenidoNav {
-        top: 0px;
-    }
-
+   
 
 
     /*Index*/
 
     .titles {
         padding-top: 110px;
-        height: 300px;
+        height: 350px;
         width: 100%;
     }
     
@@ -646,7 +551,7 @@ button:hover {
         display: grid;
         padding: 0em 1em 0em 1em;
         grid-template-columns: 1fr;
-        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
         grid-template-areas:    "imagen1"
                                 "texto1"
                                 "imagen2"
@@ -659,6 +564,9 @@ button:hover {
     .titulosVioleta {
         text-align: center;
     }
+    .subtitulosVioleta {
+        text-align: center;
+    }
     .parrafoCorto {
         width: 100%;
         text-align: center;
@@ -667,17 +575,17 @@ button:hover {
     
     img {
         width: 100%;
-        height: 150%;
+        height: 100%;
     }
     
     .ctaIndex {
         height: 200px;
-        padding: 4em 0em 1em 0em;
+        padding: 4em 1em 1em 1em;
     }
     
     .portfolio {
-        padding: 2em;
-        height: 1300px;
+        padding: 0em;
+        height: 1200px;
     }
     
     .seccionCards {
@@ -693,16 +601,6 @@ button:hover {
         row-gap: 5%;
     }
     
-    .imgCard {
-        width: 100%;
-        height: 100%;
-        padding-bottom: 20px;
-    }
-
-
-    .next {
-       display: none;
-    }
 
 
     /*Pie de página*/
@@ -715,8 +613,6 @@ button:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
-    padding-top: 20%;
     padding-left: 4em;
     height: 800px;
 }
@@ -730,7 +626,7 @@ button:hover {
     flex-direction: column;
     justify-content: left;
     line-height: 3em;
-    width: 40%;
+    width: 50%;
 }
 
 .logo {
@@ -741,25 +637,359 @@ button:hover {
 
 .secciones {
     height: 20%;
-    padding-right: 1em
-    line-height: 1em;
+    padding-right: 1em;
+    line-height: 2em;
+    padding-top: 4em;
 }
 
-/*pages contacto*/
+/*pages*/ 
+.headerPages {
+    padding: 0px;
+}
+
+
+/*pages Servicios*/
+
+
+.cardsServicios {
+    display: grid;
+    padding: 0em 2em 2em 2em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:    "servicio1"
+                             "servicio2"
+                            "servicio3"
+                             "servicio4" 
+                             "servicio5"
+                            "servicio6";
+    row-gap: 2%;
+    justify-content: center;
+    align-content: center;
+    height: 2000px;
+}
+
+.FooterServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../Images/Footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 4em;
+    height: 800px;
+    position: relative;
+    top: 0px;
+}
+
+/*Pages CV*/
+
+.breveCV{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px 550px 200px 200px;
+    grid-template-areas: "imagenCV"
+                        "textoCV"
+                        "titulo"
+                        "tools";
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.imgCV {
+    height: 300px;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+    grid-area: imagenCV;
+}
+
+.parrafoCV {
+    justify-self: center;
+    text-align: center;
+    width: 80%;
+    grid-area: textoCV;
+}
+
+.figma {
+    height: 60px;
+    width: 35px;
+    margin: 0em 1em 0em 2em;
+    opacity: 50%;
+}
+
+
+.github {
+    height: 70px;
+    width: 71px;  
+    margin: 0em 1em -0.5em 0em;
+    opacity: 50%;
+}
+
+
+.VS {
+    height: 50px;
+    width: 50px;
+    margin: 0em 1em 0em 0em;
+    opacity: 50%;
+}
+
+
+.git {
+    height: 62px;
+    width: 62px;
+    margin: 0em 1em 0em 0em;
+    opacity: 50%;
+}
+
+
+/* Pages Contacto */
 
 .formContacto {
-    left: 1em;
+    background-color: #F2CA50;
+    width: 70%;
+    border-radius: 4px;
+    display: block;
+    margin: 1em 1em 1em 1em;
+    padding: 2em;
 }
 
+.tituloForm {
+    margin-left: 0em;
 }
+
+.titulo3 {
+    text-align: left;
+}
+
  
-/*MD*/
-@media only screen and (min-width: 600px){
+/*SMALL2*/
 
+@media only screen and (min-width: 500px) and (max-width:700px) {
+    
+
+/*pages Servicios*/
+
+.cardsServicios {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas:    "servicio1 servicio2"
+                            "servicio3 servicio4"
+                            "servicio5 servicio6";
+    justify-content: center;
+    align-content: center;
+    height: 1000px;
+}
+ /*Pages CV*/
+
+.iconosTool {
+    justify-self: center;
+}
 
 }
- 
-/*LG*/
-@media only screen and (min-width: 992px){
 
+/*SMALL3*/
+
+@media only screen and (min-width: 700px) and (max-width: 768px) {
+
+   
+    /*Index*/
+
+    .procesoCreacion {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 356px 356px 356px;
+        grid-template-areas:    "imagen1 texto1"
+                                "texto2 imagen2"
+                                "imagen3 texto3";
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 83px;
+        padding-left: 15%;  
+    }
+
+    img {
+        width: 100%;
+        height: 80%;
+    }
+/*pages Servicios*/
+
+.cardsServicios {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas:    "servicio1 servicio2"
+                            "servicio3 servicio4"
+                            "servicio5 servicio6";
+    justify-content: center;
+    align-content: center;
+    height: 1000px;
+}
+ /*Pages CV*/
+
+    .breveCV {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 200px 200px;
+    grid-template-areas: "imagenCV"
+                        "textoCV"
+                        "titulo"
+                        "tools";
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    }
+}
+
+
+
+/*MEDIUM*/
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+        
+    /*Index*/
+
+
+    .parrafoCorto {
+        width: 90%;
+    }
+
+    .procesoCreacion {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 356px 356px 356px;
+        grid-template-areas:    "imagen1 texto1"
+                                "texto2 imagen2"
+                                "imagen3 texto3";
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 83px; 
+    }
+
+    img {
+        width: 100%;
+        height: 80%;
+    }
+
+
+    /*Pie de página*/
+
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(../Images/Footer.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-left: 4em;
+        height: 800px;
+    }
+    
+    .logos {
+        width: 60%;
+    }
+    
+    .datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        line-height: 3em;
+        width: 50%;
+    }
+    
+    .logo {
+        width: 25px;
+        height: 25px;
+        padding-top: 1em;
+    }
+    
+    .secciones {
+        height: 20%;
+        padding-right: 1em;
+        line-height: 2em;
+        padding-top: 4em;
+    }
+    
+    /*pages Servicios*/
+    
+    .cardsServicios {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:    "servicio1 servicio2"
+                            "servicio3 servicio4"
+                            "servicio5 servicio6";
+    justify-content: center;
+    align-content: center;
+    height: 1150px;
+    }
+
+    .FooterServicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../Images/Footer.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2em;
+    padding-left: 4em;
+    height: 800px;
+    position: relative;
+    top: 0px;
+    }
+
+ /*Pages CV*/
+
+    .breveCV {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 200px 200px;
+    grid-template-areas: "imagenCV"
+                        "textoCV"
+                        "titulo"
+                        "tools";
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    }
+
+    .parrafoCV {
+     justify-self: center;
+    }
+
+.formContacto {
+    background-color: #F2CA50;
+    width: 70%;
+    border-radius: 4px;
+    display: block;
+    margin: 1em 1em 1em 1em;
+    padding: 2em;
+}
+
+.tituloForm {
+    margin-left: 0em;
+}
+
+.titulo3 {
+    text-align: left;
+}
+
+}
+
+/*MEDIUM*/
+@media only screen and (min-width: 993px) and (max-width: 1270px) {
+
+    /*Pages CV*/
+
+    .parrafoCV {
+        align-self: center;
+        width: 100%;
+        grid-area: textoCV;
+    }
+   
 }
