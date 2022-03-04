@@ -1,0 +1,179 @@
+@charset "UTF-8";
+* {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px; }
+
+.titulosVioleta, .subtitulosVioleta {
+  color: #5005F2;
+  font-family: "Raleway", sans-serif; }
+
+.tituloNegro, p, .parrafoSmall {
+  color: black; }
+
+.titulo1, h2, .titulo2 {
+  font-family: "Raleway", sans-serif; }
+
+.titulo1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.25rem; }
+
+.titulo3 {
+  font-size: 1.5rem; }
+
+.subtitulosVioleta {
+  font-size: 1.75rem; }
+
+.parrafoSmall {
+  font-size: 14px; }
+
+a {
+  text-decoration: none; }
+
+/*pages*/
+.headerPages {
+  text-align: center;
+  padding: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Images/WaveSmall.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px; }
+
+/*Pages CV*/
+.breveCV {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 530px 90px;
+  grid-template-areas: "imagenCV textoCV" "titulo tools";
+  justify-content: center;
+  align-content: center; }
+  .breveCV p {
+    align-self: center;
+    width: 80%;
+    grid-area: textoCV; }
+
+.imgCV {
+  height: 385px;
+  width: 385px;
+  align-self: center;
+  justify-self: center;
+  grid-area: imagenCV; }
+
+.herramientas {
+  grid-area: titulo;
+  text-align: center;
+  align-self: center; }
+
+.iconosTool {
+  grid-area: tools; }
+
+.figma {
+  height: 75px;
+  width: 50px;
+  margin: 0em 1em 0em 2em;
+  opacity: 50%; }
+
+.figma:hover {
+  opacity: 100%; }
+
+.github {
+  height: 84px;
+  width: 85px;
+  margin: 0em 1em -0.5em 1em;
+  opacity: 50%; }
+
+.github:hover {
+  opacity: 100%; }
+
+.VS {
+  height: 65px;
+  width: 65px;
+  margin: 0em 1em 0em 1em;
+  opacity: 50%; }
+
+.VS:hover {
+  opacity: 100%; }
+
+.git {
+  height: 73px;
+  width: 73px;
+  margin: 0em 2em 0em 1em;
+  opacity: 50%; }
+
+.git:hover {
+  opacity: 100%; }
+
+/*index call to action*/
+.ctaIndex {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0em 1em 0em;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Images/cta.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px; }
+
+/*Botones*/
+.buttonMFR {
+  color: #5005F2;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 2em 0em 1em 0em; }
+
+.buttonMFR:hover {
+  background-color: #6E32F0; }
+
+/*Pie de página*/
+.FooterServicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(../Images/Footer.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  padding-top: 10%;
+  position: relative;
+  top: 0px; }
+
+.datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  line-height: 50px;
+  width: 60%; }
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%; }
+  .logos img {
+    width: 60px;
+    height: 60px;
+    padding-top: 100px; }
+  .logos img:hover {
+    transform: translate(5px, 5px); }
+
+.secciones {
+  height: 40%;
+  padding-right: 127px;
+  line-height: 80px; }
+
+.hoverFooter:hover {
+  font-weight: bold; }
