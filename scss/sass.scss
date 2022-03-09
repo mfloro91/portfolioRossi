@@ -1,4 +1,4 @@
-@import url(./variables.scss);
+@import "./_variables.scss";
 
 * {
     color: $colorSecundaryWhite;
@@ -6,19 +6,26 @@
     margin: 0px;
 }
 
+
+/* aplico mixin para los textos de la página*/
+
+@mixin textos( $colorLetra , $tipoTexto) {
+    color: $colorLetra;
+    font-family: $tipoTexto;
+}
+
 .titulosVioleta, .subtitulosVioleta {
-    color: $colorPrimaryTextos;
-    font-family: $font-familyTitulos;
+    @include textos($colorPrimaryTextos , $font-familyTitulos)
 }
 
 
 
 .tituloNegro, p, .parrafoSmall {
-    color: $colorBlack;
+    @include textos($colorBlack , 'Roboto' sans-serif )
 }
 
 .titulo1, h2, .titulo2 {
-    font-family: $font-familyTitulos;
+    @include textos($colorSecundaryWhite , $font-familyTitulos )
 }
 
 .titulo1 {
@@ -45,19 +52,29 @@ a {
     text-decoration: none;
 }
 
-/*pages*/ 
-.headerPages {
+/*header index y header pages - aplico extend*/
+
+.headerPadre {
     text-align: center;
-    padding: 142px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../Images/WaveSmall.png);
+    padding: 142px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 350px;
+  }
+  
+  .headerIndex {
+    @extend .headerPadre;
+    background-image: url(../Images/Wave.png);
+    height: 550px;
+  }
+  
+  .headerPages {
+    @extend .headerPadre;
+    background-image: url(../Images/WaveSmall.png);
+    height: 350px; 
 }
 
 

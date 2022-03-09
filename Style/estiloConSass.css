@@ -4,14 +4,17 @@
   font-family: 'Roboto', sans-serif;
   margin: 0px; }
 
+/* aplico mixin para los textos de la página*/
 .titulosVioleta, .subtitulosVioleta {
   color: #5005F2;
   font-family: "Raleway", sans-serif; }
 
 .tituloNegro, p, .parrafoSmall {
-  color: black; }
+  color: black;
+  font-family: "Roboto" sans-serif; }
 
 .titulo1, h2, .titulo2 {
+  color: white;
   font-family: "Raleway", sans-serif; }
 
 .titulo1 {
@@ -32,18 +35,23 @@ h2 {
 a {
   text-decoration: none; }
 
-/*pages*/
-.headerPages {
+/*header index y header pages - aplico extend*/
+.headerPadre, .headerIndex, .headerPages {
   text-align: center;
-  padding: 142px;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../Images/WaveSmall.png);
+  padding: 142px;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; }
+
+.headerIndex {
+  background-image: url(../Images/Wave.png);
+  height: 550px; }
+
+.headerPages {
+  background-image: url(../Images/WaveSmall.png);
   height: 350px; }
 
 /*Pages CV*/
