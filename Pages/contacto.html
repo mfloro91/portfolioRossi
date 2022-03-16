@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="keywords" content="diseño ux , diseñadora , experiencia de usuario , design thinking , diseño web , diseño app">
     <meta name="description" content="M. Florencia Rossi es psicóloga y diseñadora UX. ¡Cotiza tu diseño web o mobile!">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../Style/estilo.css">
+    <link rel="stylesheet" href="../Style/estiloConSass.css">
     <link rel="icon" href="../Images/Icono.png">
     <title>Contacto</title>
 </head>
@@ -43,75 +43,82 @@
     </header>
 
     <main>
+        
 
-        <div class="formContacto">
-            <div class="tituloForm">
-                <h3 class="titulosVioleta titulo3">Dejá tus datos</h3>
-                <p>Te contactaré a la brevedad</p>
-            </div>
-            <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <div class="col">
-                    <form class="form-floating">
-                        <input type="text" class="form-control" id="floatingInputValue" placeholder="Alejandra">
-                        <label for="floatingInputValue" class="parrafoSmall">Nombre</label>
-                      </form>
+            <div class="formContacto">
+                <div class="tituloForm">
+                    <h3 class="titulosVioleta titulo3">Dejá tus datos</h3>
+                    <p>Te contactaré a la brevedad</p>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <form class="form-floating">
-                        <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
-                        <label for="floatingInputValue" class="parrafoSmall">Email</label>
-                      </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected style="color: black;"">Elige el servicio</option>
-                          <option value="1" class="parrafoSmall"> Diseño web </option>
-                          <option value="2" class="parrafoSmall"> Diseño app </option>
-                          <option value="3" class="parrafoSmall"> UX research </option>
-                          <option value="3" class="parrafoSmall"> Rediseño producto </option>
-                        </select>
+
+                <form action="">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="col">
+                                    <div class="form-floating">
+                                         <input type="text" class="form-control" id="floatingInputValue" placeholder="Alejandra">
+                                         <label for="floatingInputValue" class="parrafoSmall">Nombre</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                                    <label for="floatingInputValue" class="parrafoSmall">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div>
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected style="color: black;">Elige el servicio</option>
+                                    <option value="1" class="parrafoSmall"> Diseño web </option>
+                                    <option value="2" class="parrafoSmall"> Diseño app </option>
+                                    <option value="3" class="parrafoSmall"> UX research </option>
+                                    <option value="3" class="parrafoSmall"> Rediseño producto </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mb-3">Contactame</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    
+                </form>
             </div>
-            <div class="row">
-                <div class="col">
-                        <button type="submit" class="btn btn-primary mb-3">Contactame</button>
-                </div>
-            </div>
-            </div>
-        </div>
+                    
+        <img src="../Images/Contact2.png" alt="Hombre enviando solicitud" class="imagenContacto">
         
     </main>
     
 
 
-<footer class="Footer">
-    <div class="datos">
-        <h1 class="titulo1">María Florencia Rossi </h1>  
-        <h3 class="titulo3">Psicóloga y Diseñadora UX</h3>
-        <div class="logos">
-            <a href="https://www.linkedin.com/in/mar%C3%ADa-florencia-rossi/"> <img src="../Images/linkedin.png" alt="logo de linkedin" class="logo"> </a> 
-            <a href="https://www.behance.net/flor-rossi"> <img src="../Images/behance.png" alt="logo de behance" class="logo"> </a>
-            <img src="../Images/whatsapp.png" alt="logo de whatsapp" class="logo">
+    <footer class="Footer">
+        <div class="datos">
+            <h1 class="titulo1">María Florencia Rossi </h1>  
+            <h3 class="titulo3">Psicóloga y Diseñadora UX</h3>
+            <div class="logos">
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-florencia-rossi/"> <img src="../Images/linkedin.png" alt="logo de linkedin" class="logo"> </a> 
+                <a href="https://www.behance.net/flor-rossi"> <img src="../Images/behance.png" alt="logo de behance" class="logo"> </a>
+                <img src="../Images/whatsapp.png" alt="logo de whatsapp" class="logo">
+            </div>
         </div>
-    </div>
-    <div class="secciones">
-        <h3 class="titulo3">Visita en esta página</h3>
-        <p class="parrafoBlanco hoverFooter"> <a href="./servicios.html"> Servicios </a></p>
-        <p class="parrafoBlanco hoverFooter"> <a href="./portfolio.html"> Portfolio </a></p>
-        <p class="parrafoBlanco hoverFooter"> <a href="./curriculum.html"> Curriculum </a></p>
-        <p class="parrafoBlanco hoverFooter"> <a href="./contacto.html"> Contacto </a></p>
-    </div>
-</footer>
+        <nav class="secciones">
+            <h3 class="titulo3">Visita en esta página</h3>
+            <a href="./servicios.html" class="parrafoBlanco hoverFooter"> Servicios </a>
+            <a href="./portfolio.html" class="parrafoBlanco hoverFooter"> Portfolio </a>
+            <a href="./curriculum.html" class="parrafoBlanco hoverFooter"> Curriculum </a>
+            <a href="./contacto.html" class="parrafoBlanco hoverFooter"> Contacto </a>
+        </nav>
+    </footer>
 
-<script src="./js/bootstrap.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

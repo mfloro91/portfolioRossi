@@ -1,0 +1,73 @@
+/* Pages Contacto */
+
+
+.formContacto {
+    background-color: #F2CA50;
+    width: 50%;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    padding: 2em;
+}
+
+.tituloForm {
+    margin-left: 2em;
+}
+
+.imagenContacto {
+    position: absolute;
+    top: 81%;
+    left: 60%;
+    height: 476px;
+    width: 476px;
+}
+
+
+
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+    /* Pages Contacto */
+    
+    .formContacto {
+        background-color: #F2CA50;
+        width: 70%;
+        border-radius: 4px;
+        display: block;
+        margin: 1em 1em 1em 1em;
+        padding: 2em;
+    }
+    
+    .tituloForm {
+        margin-left: 0em;
+    }
+    .imagenContacto {
+        display: none;
+     }
+
+}  
+
+/*MEDIUM*/
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+   
+    .formContacto {
+        background-color: #F2CA50;
+        width: 70%;
+        border-radius: 4px;
+        display: block;
+        margin: 1em 1em 1em 1em;
+        padding: 2em;
+    }
+    
+    .tituloForm {
+        margin-left: 0em;
+    } 
+
+    .imagenContacto {
+       display: none;
+    }
+}
+

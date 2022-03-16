@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <meta name="keywords" content="diseño ux , diseñadora , experiencia de usuario , design thinking , diseño web , diseño app">
     <meta name="description" content="M. Florencia Rossi es psicóloga y diseñadora UX. Diseña productos digitales con impacto">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="./Style/estilo.css">
+    <link rel="stylesheet" href="./Style/estiloConSass.css">
     <link rel="icon" href="./Images/Icono.png">
     <title> Psicóloga y diseñadora UX </title>
 </head>
@@ -35,7 +35,7 @@
           </nav>     
         
     
-        <div class="titles">
+        <div class="headerIndex">
             <section class="titulosBold">
                 <h1 class="titulo1">María Florencia Rossi</h1>
                 <h3 class="titulo3">Psicóloga y Diseñadora UX</h3>
@@ -71,13 +71,13 @@
         </section>
 
         <section class="ctaIndex">
-            <h2 class="tituloNegro">¿Querés que trabajemos juntos?</h2>
+            <h3 class="tituloNegro">¿Querés que trabajemos juntos?</h2>
             <a href="https://www.linkedin.com/in/mar%C3%ADa-florencia-rossi/"> <button type="submit" class="btn btn-primary mb-3">Contactame</button> </a> 
         </section>
 
         <section class="portfolio">
-            <h2 class="subtitulosVioleta">Algunos de mis trabajos</h2>
-                <div class="seccionCards">
+            <h2 class="titulosVioleta">Algunos de mis trabajos</h2>
+                <a href="./Pages/portfolio.html"><div class="seccionCards">
                     <div class="card" style="width: 18rem;">
                         <img src="./Images/tuentrada.png" alt="mujer usando computadora" class="card-img-top">
                         <div class="card-body">
@@ -101,31 +101,31 @@
                             <p class="card-text"> Youway: elige tu profesión  </p>
                         </div>
                     </div>
-                </div>
+                </div></a>
         </section>
 
 
     </main>
     
 
-<footer class="Footer">
-    <div class="datos">
-        <h1 class="titulo1">María Florencia Rossi </h1>  
-        <h3 class="titulo3">Psicóloga y Diseñadora UX</h3>
-        <div class="logos">
-            <a href="https://www.linkedin.com/in/mar%C3%ADa-florencia-rossi/"> <img src="./Images/linkedin.png" alt="logo de linkedin" class="logo"> </a>
-            <a href="https://www.behance.net/flor-rossi"> <img src="./Images/behance.png" alt="logo de behance" class="logo"> </a>
-            <a href=""> <img src="./Images/whatsapp.png" alt="logo de whatsapp" class="logo"> </a>
+    <footer class="Footer">
+        <div class="datos">
+            <h1 class="titulo1">María Florencia Rossi </h1>  
+            <h3 class="titulo3">Psicóloga y Diseñadora UX</h3>
+            <div class="logos">
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-florencia-rossi/"> <img src="./Images/linkedin.png" alt="logo de linkedin" class="logo"> </a>
+                <a href="https://www.behance.net/flor-rossi"> <img src="./Images/behance.png" alt="logo de behance" class="logo"> </a>
+                <a href=""> <img src="./Images/whatsapp.png" alt="logo de whatsapp" class="logo"> </a>
+            </div>
         </div>
-    </div>
-    <div class="secciones">
-            <h3 class="titulo3">Visita en esta página</h3>
-            <p class="parrafoBlanco hoverFooter"> <a href="./Pages/servicios.html"> Servicios </a></p>
-            <p class="parrafoBlanco hoverFooter"> <a href="./Pages/portfolio.html"> Portfolio </a></p>
-            <p class="parrafoBlanco hoverFooter"> <a href="./Pages/curriculum.html"> Curriculum </a></p>
-            <p class="parrafoBlanco hoverFooter"> <a href="./Pages/contacto.html"> Contacto </a></p>
-    </div>
-</footer>
+        <nav class="secciones">
+                <h3 class="titulo3">Visita en esta página</h3>
+                <a href="./Pages/servicios.html" class="parrafoBlanco hoverFooter"> Servicios </a>
+                <a href="./Pages/portfolio.html" class="parrafoBlanco hoverFooter"> Portfolio </a>
+                <a href="./Pages/curriculum.html" class="parrafoBlanco hoverFooter"> Curriculum </a>
+                <a href="./Pages/contacto.html" class="parrafoBlanco hoverFooter"> Contacto </a>
+        </nav>
+    </footer>
 
 
 <script src="./js/bootstrap.min.js"></script>

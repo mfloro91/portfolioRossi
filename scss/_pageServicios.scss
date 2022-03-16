@@ -1,0 +1,126 @@
+/*pages Servicios aplico extend*/
+
+.cardsServicios {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 382px 382px;
+    grid-template-areas:    "servicio1 servicio2 servicio3"
+                            "servicio4 servicio5 servicio6";
+    row-gap: 5%;
+    column-gap: 5%;
+    justify-content: center;
+    align-content: center;
+    height: 800px;
+    padding: 5% 0% 5% 0%;
+}
+
+.serviciosCard {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    text-align: center;
+    padding: 40% 5% 40% 5%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.Servicios1 {
+    @extend .serviciosCard;
+    background-image: url(../Images/Servicio1.png);   
+}
+
+.serviciosCard:hover {
+        transform: scale(1, 1.05);
+}
+
+
+.Servicios2 {
+    @extend .serviciosCard;
+    background-image: url(../Images/Servicio2.png);
+}
+
+
+.Servicios3 {
+    @extend .serviciosCard;
+    background-image: url(../Images/Servicio3.png);
+}
+
+
+.Servicios4 {
+    @extend .serviciosCard;
+    background-image: url(../Images/Servicio4.png);
+}
+
+.Servicios5 {
+    @extend .serviciosCard;
+    background-image: url(../Images/Servicio5.png);
+}
+
+.Servicios6 {
+    @extend .serviciosCard;
+    background-image: url(../Images/Servicio6.png);
+}
+
+
+
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 500px) {
+ 
+    
+    .cardsServicios {
+        display: grid;
+        padding: 0em 2em 2em 2em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas:    "servicio1"
+                                 "servicio2"
+                                "servicio3"
+                                 "servicio4" 
+                                 "servicio5"
+                                "servicio6";
+        row-gap: 2%;
+        justify-content: center;
+        align-content: center;
+        height: 2000px;
+    }
+}
+    
+/*SMALL2*/
+
+@media only screen and (min-width: 500px) and (max-width:600px) {
+    
+
+    /*pages Servicios*/
+    
+    .cardsServicios {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 250px 250px 250px;
+        grid-template-areas:    "servicio1 servicio2"
+                                "servicio3 servicio4"
+                                "servicio5 servicio6";
+        justify-content: center;
+        align-content: center;
+        height: 1000px;
+}
+}
+
+
+/*MEDIUM*/
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    
+    .cardsServicios {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:    "servicio1 servicio2"
+                            "servicio3 servicio4"
+                            "servicio5 servicio6";
+    justify-content: center;
+    align-content: center;
+    height: 1150px;
+    }
+}
+
+    

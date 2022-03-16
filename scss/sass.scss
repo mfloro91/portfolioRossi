@@ -1,4 +1,10 @@
 @import "./_variables.scss";
+@import "./_pageCv.scss";
+@import "./_pageServicios.scss";
+@import "./_pagePortfolio.scss";
+@import "./_pageContacto.scss";
+@import "./_headerFooter.scss";
+@import "./_tipografia.scss";
 
 * {
     color: $colorSecundaryWhite;
@@ -6,159 +12,60 @@
     margin: 0px;
 }
 
+/*index proceso creacion*/
 
-/* aplico mixin para los textos de la página*/
-
-@mixin textos( $colorLetra , $tipoTexto) {
-    color: $colorLetra;
-    font-family: $tipoTexto;
-}
-
-.titulosVioleta, .subtitulosVioleta {
-    @include textos($colorPrimaryTextos , $font-familyTitulos)
-}
-
-
-
-.tituloNegro, p, .parrafoSmall {
-    @include textos($colorBlack , 'Roboto' sans-serif )
-}
-
-.titulo1, h2, .titulo2 {
-    @include textos($colorSecundaryWhite , $font-familyTitulos )
-}
-
-.titulo1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2.25rem;
-}
-
-.titulo3 {
-    font-size: 1.5rem;
-}
-
-.subtitulosVioleta {
-    font-size: 1.75rem;
-}
-
-.parrafoSmall {
-    font-size: 14px;
-}
-
-a {
-    text-decoration: none;
-}
-
-/*header index y header pages - aplico extend*/
-
-.headerPadre {
+#tituloIndex {
     text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 142px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .headerIndex {
-    @extend .headerPadre;
-    background-image: url(../Images/Wave.png);
-    height: 550px;
-  }
-  
-  .headerPages {
-    @extend .headerPadre;
-    background-image: url(../Images/WaveSmall.png);
-    height: 350px; 
 }
 
 
-/*Pages CV*/
-
-.breveCV{
+.procesoCreacion {
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 530px 90px;
-    grid-template-areas: "imagenCV textoCV"
-                        "titulo tools";
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 356px 356px 356px;
+    grid-template-areas:    "imagen1 texto1"
+                            "texto2 imagen2"
+                            "imagen3 texto3";
+    align-items: center;
     justify-content: center;
-    align-content: center;
 
-    p {
-        align-self: center;
-        width: 80%;
-        grid-area: textoCV;
-    }
-
+    padding-bottom: 83px;
+    padding-top: 100px;
+    padding-left: 15%;    
 }
 
-.imgCV {
-    height: 385px;
-    width: 385px;
-    align-self: center;
-    justify-self: center;
-    grid-area: imagenCV;
+.parrafoCorto {
+    width: 70%;
+    padding-top: 1em;
 }
 
-.herramientas {
-    grid-area: titulo;
-    text-align: center;
-    align-self: center;
+img {
+    width: 60%;
 }
 
-.iconosTool {
-    grid-area: tools;
+.imagen1 {
+    grid-area: imagen1;  
 }
 
-.figma {
-    height: 75px;
-    width: 50px;
-    margin: 0em 1em 0em 2em;
-    opacity: 50%;
+.texto1 {
+    grid-area: texto1;
 }
 
-.figma:hover {
-    opacity: 100%;
+.texto2 {
+    grid-area: texto2;
 }
 
-.github {
-    height: 84px;
-    width: 85px;  
-    margin: 0em 1em -0.5em 1em;
-    opacity: 50%;
+.imagen2 {
+    grid-area: imagen2;
 }
 
-.github:hover {
-    opacity: 100%;
+.texto3 {
+    grid-area: texto3;
 }
 
-.VS {
-    height: 65px;
-    width: 65px;
-    margin: 0em 1em 0em 1em;
-    opacity: 50%;
+.imagen3 {
+    grid-area: imagen3;
 }
-
-.VS:hover {
-    opacity: 100%;
-}
-
-.git {
-    height: 73px;
-    width: 73px;
-    margin: 0em 2em 0em 1em;
-    opacity: 50%;
-}
-
-.git:hover {
-    opacity: 100%;
-}
-
 
 /*index call to action*/
 
@@ -176,83 +83,136 @@ a {
     height: 500px;
 }
 
-/*Botones*/
+/*index portfolio*/
 
-.buttonMFR {
-    color: $colorPrimaryTextos;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 16px;
-    margin: 2em 0em 1em 0em;
-}
-
-.buttonMFR:hover {
-    background-color: #6E32F0;
-}
-
-/*Pie de página*/
-
-.FooterServicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url(../Images/Footer.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
-    padding-top: 10%;
-    position: relative;
-    top: 0px;
-}
-
-.datos {
+.portfolio {
+    text-align: center;
+    padding: 140px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    line-height: 50px;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
 }
 
-.logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
+.seccionCards {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: "card1 card2 card3";
+    column-gap: 5%;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1, 1.05);
+}
+
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+
+
+    /*Index*/
+
+    
+    .procesoCreacion {
+        display: grid;
+        padding: 0em 1em 0em 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas:    "imagen1"
+                                "texto1"
+                                "imagen2"
+                                "texto2" 
+                                "imagen3"
+                                "texto3";    
+    }
+    
+    .titulosVioleta {
+        text-align: center;
+    }
+    .subtitulosVioleta {
+        text-align: center;
+    }
+    .parrafoCorto {
+        width: 90%;
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+    }
     
     img {
-        width: 60px;
-        height: 60px;
+        display: block;
+        margin: auto;
+        height: 90%;
+        width: auto;
+    }
+    
+    .ctaIndex {
+        height: 200px;
+        padding: 4em 1em 1em 1em;
+    }
+    
+    .portfolio {
+        padding: 0em;
+        height: 1200px;
+    }
+    
+    .seccionCards {
+        padding-top: 4em;
+        margin-top: 2em;
+        display: grid;
+        padding: 0em 1em 0em 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px;
+        grid-template-areas: "card1"
+                            "card2" 
+                            "card3";
+        row-gap: 5%;
+    }
+    
+}
+
+
+
+/*MEDIUM*/
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+        
+    /*Index*/
+
+
+    .parrafoCorto {
+        width: 90%;
+    }
+
+    .procesoCreacion {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 356px 356px 356px;
+        column-gap: 15%;
+        grid-template-areas:    "imagen1 texto1"
+                                "texto2 imagen2"
+                                "imagen3 texto3";
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 83px; 
+    }
+
+    /*index portfolio*/
+
+
+    .seccionCards {
         padding-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35% 35% 35%;
+        grid-template-areas: "card1"
+                            "card2"
+                            "card3";
+        row-gap: 5%;
+        justify-content: center;
     }
 
-    img:hover {
-        transform: translate(5px, 5px);
-    }
 }
-
-
-.secciones {
-    height: 40%;
-    padding-right: 127px;
-    line-height: 80px;
-}
-
-.hoverFooter:hover {
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

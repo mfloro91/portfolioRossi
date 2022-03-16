@@ -1,0 +1,99 @@
+/* aplico mixin para los textos de la página*/
+
+@mixin textos( $colorLetra , $tipoTexto) {
+    color: $colorLetra;
+    font-family: $tipoTexto;
+}
+
+.titulosVioleta, .subtitulosVioleta {
+    @include textos($colorPrimaryTextos , $font-familyTitulos)
+}
+
+.tituloNegro, p, .parrafoSmall {
+    @include textos($colorBlack , 'Roboto' sans-serif )
+}
+
+.titulo1, h2, .titulo2, .parrafoBlanco {
+    @include textos($colorSecundaryWhite , $font-familyTitulos )
+}
+
+.titulo1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+.titulo3 {
+    font-size: 1.5rem;
+}
+
+.subtitulosVioleta {
+    font-size: 1.5rem;
+}
+
+.parrafoSmall {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Botones*/
+
+.buttonMFR {
+    background-color: #5005F2;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 2em 0em 1em 0em;
+}
+
+button:hover {
+    background-color: #6E32F0;
+}
+
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+
+ 
+
+    /*Textos*/
+
+
+    .titulo1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .titulo3 {
+        font-size: 1rem;
+    }
+
+    .titulosBold {
+        line-height: 2.5rem;   
+        padding: 0em 1em 0em 1em;
+    }
+    
+    .titulosVioleta {
+        font-size: 1.3rem;
+    }
+
+    .subtitulosVioleta {
+        font-size: 1rem;
+    }
+
+    .parrafoBlanco {
+        line-height: 2rem;
+        padding: 0em 1em 0em 1em;
+    }
+    
+    .parrafoSmall {
+        color: black;
+        font-size: 0.8rem;
+    }
+
+}

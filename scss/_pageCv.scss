@@ -1,0 +1,195 @@
+/*Pages CV*/
+
+.breveCV{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 650px 90px;
+    grid-template-areas: "imagenCV textoCV"
+                        "titulo tools";
+    justify-content: center;
+    align-content: center;
+
+    p {
+        align-self: center;
+        width: 80%;
+        grid-area: textoCV;
+    }
+
+}
+
+.imgCV {
+    height: 385px;
+    width: 385px;
+    align-self: center;
+    justify-self: center;
+    grid-area: imagenCV;
+}
+
+.herramientas {
+    grid-area: titulo;
+    text-align: center;
+    align-self: center;
+}
+
+.iconosTool {
+    grid-area: tools;
+}
+
+.figma {
+    height: 75px;
+    width: 50px;
+    margin: 0em 1em 0em 2em;
+    opacity: 50%;
+}
+
+.figma:hover {
+    opacity: 100%;
+}
+
+.github {
+    height: 84px;
+    width: 85px;  
+    margin: 0em 1em -0.5em 1em;
+    opacity: 50%;
+}
+
+.github:hover {
+    opacity: 100%;
+}
+
+.VS {
+    height: 65px;
+    width: 65px;
+    margin: 0em 1em 0em 1em;
+    opacity: 50%;
+}
+
+.VS:hover {
+    opacity: 100%;
+}
+
+.git {
+    height: 73px;
+    width: 73px;
+    margin: 0em 2em 0em 1em;
+    opacity: 50%;
+}
+
+.git:hover {
+    opacity: 100%;
+}
+
+
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+
+
+    /*Pages CV*/
+    
+    .breveCV{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 750px 100px 400px;
+        grid-template-areas: "imagenCV"
+                            "textoCV"
+                            "titulo"
+                            "tools";
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    
+    .imgCV {
+        height: 300px;
+        width: 300px;
+        align-self: center;
+        justify-self: center;
+        grid-area: imagenCV;
+    }
+    
+    .parrafoCV {
+        justify-self: center;
+        text-align: center;
+        width: 80%;
+        grid-area: textoCV;
+    }
+
+    .iconosTools {
+        margin: auto;
+        opacity: 50%;
+        padding: 1em;
+    }
+
+    .figma {
+        @extend .iconosTools;
+        height: 60px;
+        width: 35px;
+    }
+    
+    
+    .github {
+        @extend .iconosTools;
+        height: 70px;
+        width: 71px;  
+    }
+    
+    
+    .VS {
+        @extend .iconosTools;
+        height: 50px;
+        width: 50px;
+    }
+    
+    
+    .git {
+        @extend .iconosTools;
+        height: 62px;
+        width: 62px;
+    }
+}
+
+/*SMALL*/
+@media only screen and (min-width: 450px) and (max-width: 700px) {
+
+    .breveCV{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px 750px 100px 400px;
+        grid-template-areas: "imagenCV"
+                            "textoCV"
+                            "titulo"
+                            "tools";
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+/*MEDIUM*/
+
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+  
+
+    /*Pages CV*/
+   
+       .breveCV {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 400px 400px 200px 200px;
+       grid-template-areas: "imagenCV"
+                           "textoCV"
+                           "titulo"
+                           "tools";
+       justify-content: center;
+       align-content: center;
+       text-align: center;
+       }
+   
+       .parrafoCV {
+        align-self: center;
+        width: 100%;
+        grid-area: textoCV;
+        justify-self: center;
+       }
+}
+       
