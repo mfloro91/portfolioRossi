@@ -1,0 +1,303 @@
+/* card con trabajos*/
+
+.portfolioCards {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 600px 500px 500px;
+    grid-template-areas:    "texto1 imagen1"
+                            "texto2 imagen2"
+                            "texto3 imagen3";
+    justify-content: center;
+    row-gap: 5%;
+    padding: 100px 0px 500px 34px;
+ 
+}
+
+.parrafoCorto {
+    width: 70%;
+    padding-top: 1em;
+}
+
+
+.imgtuentrada {
+    grid-area: imagen1;  
+    width: 100%;
+    height: 100%;
+}
+
+.tuentrada {
+    grid-area: texto1;
+    padding: 34px 0px 0px 34px;
+    background-color: #FCF4DC;
+}
+
+.malverso {
+    grid-area: texto2;
+    padding: 34px 0px 0px 34px;
+    background-color: #FCF4DC;
+}
+
+.imgmalverso {
+    grid-area: imagen2;
+    width: 100%;
+    height: 100%;
+}
+
+.youway {
+    grid-area: texto3;
+    padding: 34px 0px 0px 34px;
+    background-color: #FCF4DC;
+}
+
+.imgyouway {
+    grid-area: imagen3;
+    width: 100%;
+    height: 100%;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.chip {
+    display: flex;
+flex-direction: row;
+padding: 10px;
+
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+/*SMALL*/
+@media only screen and (min-width: 100px) and (max-width: 400px) {
+
+
+   
+    .portfolioCards {
+        display: grid;
+        padding: 0em 1em 0em 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 750px 300px 650px 300px 600px;
+        grid-template-areas:    "imagen1"
+                                "texto1"
+                                "imagen2"
+                                "texto2" 
+                                "imagen3"
+                                "texto3";  
+        row-gap: 0em;
+        justify-content: center;
+    }
+
+    .detalle {
+        width: 100%;
+    }
+    
+    .chip {
+    padding: 5px;
+    }
+
+    .tuentrada {
+        grid-area: texto1;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .youway {
+        grid-area: texto3;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .malverso {
+        grid-area: texto2;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .parrafoCorto {
+        width: 90%;
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+        height: 100%;
+        width: auto;
+    }
+
+    .btn {
+        margin-left: 30%;
+    }
+}
+
+/*SMALL2*/
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+
+    .portfolioCards {
+        display: grid;
+        padding: 0em 1em 0em 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 650px 300px 550px 300px 500px;
+        grid-template-areas:    "imagen1"
+                                "texto1"
+                                "imagen2"
+                                "texto2" 
+                                "imagen3"
+                                "texto3";  
+        row-gap: 0em;
+        justify-content: center;
+    }
+
+    .detalle {
+        width: 100%;
+    }
+    
+    .chip {
+    padding: 5px;
+    }
+
+    .tuentrada {
+        grid-area: texto1;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .youway {
+        grid-area: texto3;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .malverso {
+        grid-area: texto2;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .parrafoCorto {
+        width: 90%;
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+        height: 100%;
+        width: auto;
+    }
+
+    .btn {
+        margin-left: 30%;
+    }
+}
+
+/*MEDIUM*/
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+    .portfolioCards {
+        display: grid;
+        padding: 0em 1em 0em 1em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 500px 300px 400px 300px 400px;
+        grid-template-areas:    "imagen1"
+                                "texto1"
+                                "imagen2"
+                                "texto2" 
+                                "imagen3"
+                                "texto3";  
+        row-gap: 0em;
+        justify-content: center;
+    }
+
+    .detalle {
+        width: 100%;
+    }
+    
+    .chip {
+    padding: 5px;
+    }
+
+    .tuentrada {
+        grid-area: texto1;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .youway {
+        grid-area: texto3;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .malverso {
+        grid-area: texto2;
+        padding: 6px;
+        background-color: #FCF4DC;
+    }
+
+    .parrafoCorto {
+        width: 90%;
+        text-align: center;
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    .subtitulosVioleta {
+        text-align: center;
+    }
+    
+
+    .btn {
+        margin-left: 35%;
+    }      
+
+}
+
+/*MEDIUM2*/
+
+@media only screen and (min-width: 1023px) and (max-width: 1200px) {
+
+    .portfolioCards {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 800px 700px 700px;
+        grid-template-areas:    "texto1 imagen1"
+                                "texto2 imagen2"
+                                "texto3 imagen3";
+        justify-content: center;
+        row-gap: 5%;
+        padding: 100px 0px 500px 34px;
+     
+    }
+
+}
+
+/*MEDIUM3*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+
+    .portfolioCards {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 700px 600px 600px;
+        grid-template-areas:    "texto1 imagen1"
+                                "texto2 imagen2"
+                                "texto3 imagen3";
+        justify-content: center;
+        row-gap: 5%;
+        padding: 100px 0px 500px 34px;
+     
+    }
+
+}
